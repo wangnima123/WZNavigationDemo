@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="100" id="Cxz-K3-ZBs" customClass="ItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cxz-K3-ZBs" id="cTv-JH-3SI">
+                <rect key="frame" x="0.0" y="0.0" width="437" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e7s-Ae-7ey">
+                        <rect key="frame" x="18" y="16" width="68" height="68"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="e7s-Ae-7ey" secondAttribute="height" multiplier="37:37" id="F6O-hX-Hee"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogA-rC-LsD">
+                        <rect key="frame" x="105" y="16" width="318" height="68"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="e7s-Ae-7ey" secondAttribute="bottom" constant="7" id="EXQ-XI-iWE"/>
+                    <constraint firstItem="ogA-rC-LsD" firstAttribute="leading" secondItem="e7s-Ae-7ey" secondAttribute="trailing" constant="19" id="QlM-0m-XTU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ogA-rC-LsD" secondAttribute="bottom" constant="7" id="RKP-Hx-P8T"/>
+                    <constraint firstItem="e7s-Ae-7ey" firstAttribute="leading" secondItem="cTv-JH-3SI" secondAttribute="leadingMargin" constant="10" id="Unw-oK-eVz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ogA-rC-LsD" secondAttribute="trailing" constant="6" id="X36-4V-cTp"/>
+                    <constraint firstItem="e7s-Ae-7ey" firstAttribute="top" secondItem="cTv-JH-3SI" secondAttribute="topMargin" constant="8" id="g3F-tZ-HCR"/>
+                    <constraint firstItem="ogA-rC-LsD" firstAttribute="top" secondItem="cTv-JH-3SI" secondAttribute="topMargin" constant="8" id="iSc-T6-T3f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="iconView" destination="e7s-Ae-7ey" id="eN2-Xe-1Nr"/>
+                <outlet property="textView" destination="ogA-rC-LsD" id="DOQ-78-EcY"/>
+            </connections>
+            <point key="canvasLocation" x="324.5" y="276"/>
+        </tableViewCell>
+    </objects>
+</document>
